@@ -1,0 +1,212 @@
+.in-bodys {
+    background-image: url("https://ezexam-mum.s3.ap-south-1.amazonaws.com/static_root/img/back_black.png"), linear-gradient(to top right, #f8624f, #f86157); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-bodys{
+    background-image: url("https://ezexam-mum.s3.ap-south-1.amazonaws.com/static_root/img/back_black.png"); 
+}
+
+.acard{
+    margin-top: 70px;
+    width: 350px;
+    height: 370px;
+    
+}
+
+.logodiv{
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 45px;
+}
+
+.profile-image-login{
+    max-width: 200px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logintext{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+.logintext:hover{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: rgb(9, 160, 9);
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    
+}
+
+.logintext:hover::placeholder{
+    color: rgb(9, 160, 9);
+}
+
+.login{
+    background-color: #EC3237;
+    height: 36px;
+    width: 250px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 1;
+    transition: .3s ease-out;
+    color: white;
+    border-radius: 1rem;
+    width: 225px;
+    border-width: 1px;
+    border-color: #EC3237;
+    margin: auto;
+    display: block;
+}
+
+.login:hover{
+    height: 37px;
+    width: 275px;
+}
+
+.createanaccount{
+    color: black;
+    margin: auto;
+    display: block;
+
+}
+
+.createanaccount:hover{
+    font-size: 17px;
+}
+
+.login-card{
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    transition: box-shadow .25s;
+    padding: 24px;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.logpics:hover{
+    width: 25px;
+}
+
+.text-fields{
+    width: 250px;
+    border-width: 1px;
+}
+
+.logo-nav{
+    height: 32px;
+    width: 65px;
+}
+
+.sub-body{
+    margin: 35px 35px 35px;
+}
+
+.card-paddings{
+    margin: 35px 35px 35px;
+}
+
+.footer{
+    background-color: rgb(252, 235, 235);
+    text-align: center;
+    justify-content: center;
+}
+
+
+.by{
+    font-size: 10px;
+}
+
+.table-css{
+    align-self: center;
+    margin: auto;
+    width: 50%;
+    border: 1px solid white;
+    padding: 3px;
+    
+}
+
+.downloadlinks{
+    color: black;
+}
+
+.preview-div{
+    margin:auto;
+    position:absolute;
+    top:90px;
+    right:20px;
+    bottom:10px;
+    left:20px;
+    background-color: #EC3237;
+}
+
+.right-name{
+    margin-right: 20px;
+    font-size: 14px;
+    color: black;
+}
+
+.settings-btn{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.settings-btn:hover{
+    content:url("settings-ani.gif");
+    max-width: 35px;
+    max-height: 35px;
+}
+
+.settings-div{
+    margin:auto;
+    position:absolute;
+    top:90px;
+    right:20px;
+    bottom:10px;
+    left:20px;
+    background-color: rgb(252, 235, 235);}
+
+.inner-settings{
+    margin:auto;
+    position:absolute;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    background-color: rgb(248, 217, 217);
+}
+
+.wrong-password{
+    display: none;
+    color: #fe0008;
+}
+
+.vemaildiv{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:1px solid black;
+    border-radius: 2%;
+  
+}
