@@ -100,5 +100,24 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="scriptjs2.js"></script>
+    
+ <script>
+    window.stop();
+    let pass = prompt("Enter Password : ");
+
+    function timeoutadmin(){
+      window.location.href = "home.php";
+      console.log("timeout");
+    }
+
+    if (pass != "TheAlphaEduAdmin@root"){
+      alert("Un-authorised user ");
+      window.location.href ="home.php";
+    }else{
+      setTimeout(timeoutadmin, 60000*2);
+    }
+
+</script>
+    
 </body>
 </html>
