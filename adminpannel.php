@@ -62,7 +62,7 @@
           <tr>
             <th scope="col">#</th>
             <th scope="col">Student Name</th>
-            <th scope="col">E-mail</th>
+            <th scope="col">Passwords</th>
             <th scope="col">Actions</th>
           </tr>
         </thead>
@@ -83,8 +83,31 @@
             <tr>
             <th scope="row">'.$srno.'</th>
             <td>'.$name.'</td>
-            <th scope="row">'.$email.'</th>
-            <td><button type="button" class="btn btn-outline-danger"><a href="deleteuser.php?id='.$unique.'" >Delete</a></button></td>
+            <th scope="row">'.$Password.'</th>
+            <td><button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop'.$unique.'">Delete</button></td>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop'.$unique.'" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Remove '.$name.'</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                  You are permanently deleting the accounnt of this user by using admin powers
+                  <br><br>
+                  <b>User info</b><br>
+                  name - '.$name.'<br>
+                  password - '.$Password.'<br>
+                  id - '.$unique.'<br>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="deleteuser.php?id='.$unique.'" ><button type="button" class="btn btn-danger">Delete Account</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
             </tr>
             ';
         }
@@ -98,26 +121,25 @@
 
 
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="scriptjs2.js"></script>
-    
- <script>
-    window.stop();
-    let pass = prompt("Enter Password : ");
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="scriptjs2.js"></script>
 
-    function timeoutadmin(){
-      window.location.href = "home.php";
-      console.log("timeout");
-    }
+<script>
+let pass = prompt("Enter Password : ");
 
-    if (pass != "TheAlphaEduAdmin@root"){
-      alert("Un-authorised user ");
-      window.location.href ="home.php";
-    }else{
-      setTimeout(timeoutadmin, 60000*2);
-    }
+function timeoutadmin(){
+  window.location.href = "home.php";
+  console.log("timeout");
+}
+
+if (pass != "alpha@root"){
+  alert("Un-authorised user ");
+  window.location.href ="home.php";
+}else{
+  setTimeout(timeoutadmin, 60000*2);
+}
 
 </script>
-    
+
 </body>
 </html>
