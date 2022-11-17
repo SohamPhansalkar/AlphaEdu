@@ -132,7 +132,7 @@ function timeoutadmin(){
   console.log("timeout");
 }
 
-if (pass != "alpha@root"){
+if (pass != "TheAlphaEdu"){
   alert("Un-authorised user ");
   window.location.href ="home.php";
 }else{
