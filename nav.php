@@ -37,10 +37,13 @@
   <a href="home.php" class="w3-bar-item w3-button">Home <img src="https://img.icons8.com/stickers/30/null/search-in-list.png"/></a>
   <a href="settings.php" class="w3-bar-item w3-button">Settings <img src="https://img.icons8.com/3d-fluency/30/null/gear--v2.png"/></a>
   <a href="textbooks.php" class="w3-bar-item w3-button">XI Textbooks <img src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/30/null/external-books-education-prettycons-lineal-color-prettycons-1.png"/></a>
-  <a href="https://github.com/SohamPhansalkar" class="w3-bar-item w3-button">View code <img src="https://img.icons8.com/color/30/null/code.png"/></a>
+  <a href="https://github.com/SohamPhansalkar/AlphaEdu" class="w3-bar-item w3-button">View code <img src="https://img.icons8.com/color/30/null/code.png"/></a>
   <a href="https://www.instagram.com/soham.phansalkar/" class="w3-bar-item w3-button">Social Media <img src="https://img.icons8.com/color/30/null/instagram-new--v1.png"/></a>
   <a href="mailto:sohampp26nov@gmail.com" class="w3-bar-item w3-button">E-mail <img src="https://img.icons8.com/3d-fluency/30/null/gmail.png"/></a>
-  <a href="logout.php" class="w3-bar-item w3-button">Log Out <img src="https://img.icons8.com/sf-black/30/FA5252/logout-rounded.png"/></a>
+  <a href="https://sohamphansalkar.github.io/texttospeech/" class="w3-bar-item w3-button">Text to speech <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/30/000000/external-speaker-interface-kiranshastry-gradient-kiranshastry.png"></a>    
+  <a href="about.php" class="w3-bar-item w3-button">About <img src="https://img.icons8.com/flat-round/30/null/info.png"/></a>  
+  <a href="logout.php" class="w3-bar-item w3-button">Log Out <img src="https://img.icons8.com/sf-black/30/FA5252/logout-rounded.png"/></a>  
+  <a href="adminpannel.php" class="w3-bar-item w3-button">Adminpannel<img src="https://img.icons8.com/color/30/null/admin-settings-male.png"/></a>
 </div>
 
 <script>
