@@ -210,3 +210,34 @@
     border-radius: 2%;
   
 }
+
+.viewtwxtbooks{
+    margin-left: 20px;
+}
+
+.border{
+    
+    justify-content: center;
+    margin:10%;
+}
+
+.ytframe{
+    width:94%;
+    height:30%;
+    border:solid red 5px;
+}
+
+.accordionExample1{
+    margin-left: 10%;
+    margin-right: 10%;   
+}
+
+.csgates{
+    width: 50%;
+    height: 40%;
+}
+
+.csdivs{
+    width: 98%;
+    align-self: center;
+}
