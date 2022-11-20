@@ -184,7 +184,83 @@ echo "<input type='hidden' id='session_password' value='".$_SESSION['user_pass']
     </div>
   </div>
 </div>
-</div>   
+</div><br><br>
+
+<!-- Light wala khilona -->
+
+<div class="card text-center csdivs">
+  <div class="card-header">
+    Logic Gates
+    <select id="Gin">
+    <option value="AND">AND</option>
+    <option value="OR">OR</option>
+    <option value="NOR">NOR</option>
+    <option value="NAND">NAND</option>
+    <option value="XOR">XOR</option>
+    <option value="XNOR">XNOR</option>
+  </select>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title" id="gatename">And Gate</h5>
+    <p class="card-text"><img src="https://www.homemade-circuits.com/wp-content/uploads/2018/02/AND-gate.png" id="gateicon" height="40%" width="75%"></p>
+    <br>
+
+  A : 
+    <select id="Ain">
+    <option value="0">GND</option>
+    <option value="1">VCC (+5V)</option>
+    </select>
+
+  B : 
+    <select id="Bin">
+    <option value="0">GND</option>
+    <option value="1">VCC (+5V)</option>
+    </select>
+
+<button type="button" class="btn btn-outline-success" onclick="gates()">Go</button>
+
+<img src="https://img.icons8.com/ios/60/null/mirrored-reflector-bulb.png" id="ansbulb"/>
+
+<table class="table table-striped table-hover table-bordered">
+<thead>
+    <tr>
+      <th scope="col">Input 1: A</th>
+      <th scope="col">Input 2: B</th>
+      <th scope="col">Output : Y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">VCC (+5V)</th>
+      <td>VCC (+5V)</td>
+      <td id="op1">High</td>
+    </tr>
+    <tr>
+      <th scope="row">VCC (+5V)</th>
+      <td>GND</td>
+      <td id="op2">LOW</td>
+    </tr>
+    <tr>
+      <th scope="row">GND</th>
+      <td >VCC (+5V)</td>
+      <td id="op3">LOW</td>
+    </tr>
+    <tr>
+      <th scope="row">GND</th>
+      <td >GND</td>
+      <td id="op4">LOW</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="card-footer text-muted">
+    Light wala khilona
+  </div>
+</div>
+
+
+<br><br>
    
 <br><br>
 <footer class="footer">
