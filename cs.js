@@ -28,3 +28,140 @@ function calculateresistance() {
 
 }
 
+// Light wala khilona 
+
+function gates() {
+    console.log("GATES");
+    var gateName = document.getElementById("Gin").value;
+    var a = document.getElementById("Ain").value;
+    var b = document.getElementById("Bin").value;
+
+    if(gateName == "AND"){
+        andgate(a,b);
+    }else if(gateName == "OR"){
+        orgate(a,b);
+    }else if(gateName == "NOR"){
+        norgate(a,b);
+    }else if(gateName == "NAND"){
+        nandgate(a,b);
+    }else if(gateName == "XOR"){
+        xorgate(a,b);
+    }else if(gateName == "XNOR"){
+        xnorgate(a,b);
+    }
+
+}
+
+function andgate(a,b) {
+    document.getElementById("gatename").innerHTML = "AND Gate";
+    document.getElementById("gateicon").src = "https://www.homemade-circuits.com/wp-content/uploads/2018/02/AND-gate.png";
+    document.getElementById("gateicon").style.height = "40%";
+    document.getElementById("gateicon").style.width = "75%";
+
+    if(a == 1 && b == 1){
+        document.getElementById("ansbulb").src = "https://img.icons8.com/color/60/null/reflector-bulb.png";
+    }else{
+        document.getElementById("ansbulb").src = "https://img.icons8.com/ios/60/null/mirrored-reflector-bulb.png";
+    }
+
+    document.getElementById("op1").innerHTML = "HIGH";
+    document.getElementById("op2").innerHTML = "LOW";
+    document.getElementById("op3").innerHTML = "LOW";
+    document.getElementById("op4").innerHTML = "LOW";
+}
+
+function orgate(a,b) {
+    document.getElementById("gatename").innerHTML = "OR Gate";
+    document.getElementById("gateicon").src = "https://www.electronicshub.org/wp-content/uploads/2015/08/2.OR-Symbol.jpg";
+    document.getElementById("gateicon").style.height = "40%";
+    document.getElementById("gateicon").style.width = "75%";
+
+    if(a == 1 || b == 1){
+        document.getElementById("ansbulb").src = "https://img.icons8.com/color/60/null/reflector-bulb.png";
+    }else{
+        document.getElementById("ansbulb").src = "https://img.icons8.com/ios/60/null/mirrored-reflector-bulb.png";
+    }
+
+    document.getElementById("op1").innerHTML = "HIGH";
+    document.getElementById("op2").innerHTML = "HIGH";
+    document.getElementById("op3").innerHTML = "HIGH";
+    document.getElementById("op4").innerHTML = "LOW";
+}
+
+function norgate(a,b) {
+    document.getElementById("gatename").innerHTML = "NOR Gate";
+    document.getElementById("gateicon").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/NOR_ANSI_Labelled.svg/1200px-NOR_ANSI_Labelled.svg.png";
+    document.getElementById("gateicon").style.height = "40%";
+    document.getElementById("gateicon").style.width = "75%";
+
+    if(a == 0 && b == 0){
+        document.getElementById("ansbulb").src = "https://img.icons8.com/color/60/null/reflector-bulb.png";
+    }else{
+        document.getElementById("ansbulb").src = "https://img.icons8.com/ios/60/null/mirrored-reflector-bulb.png";
+    }
+
+    document.getElementById("op1").innerHTML = "LOW";
+    document.getElementById("op2").innerHTML = "LOW";
+    document.getElementById("op3").innerHTML = "LOW";
+    document.getElementById("op4").innerHTML = "HIGH";
+}
+
+function nandgate(a,b) {
+    document.getElementById("gatename").innerHTML = "NAND Gate";
+    document.getElementById("gateicon").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Nand-gate-en.svg/1200px-Nand-gate-en.svg.png";
+    document.getElementById("gateicon").style.height = "40%";
+    document.getElementById("gateicon").style.width = "75%";
+
+    if(a == 0 || b == 0){
+        document.getElementById("ansbulb").src = "https://img.icons8.com/color/60/null/reflector-bulb.png";
+    }else{
+        document.getElementById("ansbulb").src = "https://img.icons8.com/ios/60/null/mirrored-reflector-bulb.png";
+    }
+
+    document.getElementById("op1").innerHTML = "LOW";
+    document.getElementById("op2").innerHTML = "HIGH";
+    document.getElementById("op3").innerHTML = "HIGH";
+    document.getElementById("op4").innerHTML = "HIGH";
+}
+
+function xorgate(a,b) {
+    document.getElementById("gatename").innerHTML = "XOR Gate";
+    document.getElementById("gateicon").src = "https://upload.wikimedia.org/wikipedia/commons/c/c9/Logic-gate-xor-us.png";
+    document.getElementById("gateicon").style.height = "40%";
+    document.getElementById("gateicon").style.width = "75%";
+
+    if(a == 0 && b == 0){
+        document.getElementById("ansbulb").src = "https://img.icons8.com/color/60/null/reflector-bulb.png";
+    }else if(a == 1 && b ==1){
+        document.getElementById("ansbulb").src = "https://img.icons8.com/color/60/null/reflector-bulb.png";
+    }else{
+        document.getElementById("ansbulb").src = "https://img.icons8.com/ios/60/null/mirrored-reflector-bulb.png";
+    }
+
+
+    document.getElementById("op1").innerHTML = "HIGH";
+    document.getElementById("op2").innerHTML = "LOW";
+    document.getElementById("op3").innerHTML = "LOW";
+    document.getElementById("op4").innerHTML = "HIGH";
+}
+
+function xnorgate(a,b) {
+    document.getElementById("gatename").innerHTML = "XNOR Gate";
+    document.getElementById("gateicon").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Xnor-gate-en.svg/1280px-Xnor-gate-en.svg.png";
+    document.getElementById("gateicon").style.height = "40%";
+    document.getElementById("gateicon").style.width = "75%";
+
+    if(a == 0 && b == 0){
+        document.getElementById("ansbulb").src = "https://img.icons8.com/ios/60/null/mirrored-reflector-bulb.png";
+    }else if(a == 1 && b ==1){
+        document.getElementById("ansbulb").src = "https://img.icons8.com/ios/60/null/mirrored-reflector-bulb.png";
+    }else{
+        document.getElementById("ansbulb").src = "https://img.icons8.com/color/60/null/reflector-bulb.png";        
+    }
+
+    document.getElementById("op1").innerHTML = "HIGH";
+    document.getElementById("op2").innerHTML = "LOW";
+    document.getElementById("op3").innerHTML = "LOW";
+    document.getElementById("op4").innerHTML = "HIGH";
+}
+
